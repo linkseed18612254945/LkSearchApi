@@ -95,6 +95,28 @@ _SEARCH_EXAMPLES = {
             "page_size": 5,
         },
     },
+    "9_hybrid_vector_en": {
+        "summary": "Hybrid Vector — semantic rerank (English)",
+        "description": "BM25 recalls 50 candidates, SiliconFlow bge-large-zh-v1.5 reranks by cosine similarity. Slower on cold start, cached on repeat.",
+        "value": {
+            "query": "North Korea Russia military cooperation",
+            "sort": "hybrid_vector",
+            "page": 1,
+            "page_size": 5,
+            "debug_scores": True,
+        },
+    },
+    "10_hybrid_vector_zh": {
+        "summary": "Hybrid Vector — semantic rerank (中文)",
+        "description": "语义向量重排序，适合中文长尾查询，首次慢（调 API），之后走缓存。",
+        "value": {
+            "query": "人工智能 医疗 应用",
+            "sort": "hybrid_vector",
+            "page": 1,
+            "page_size": 5,
+            "debug_scores": True,
+        },
+    },
 }
 
 
