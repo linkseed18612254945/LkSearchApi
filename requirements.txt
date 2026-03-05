@@ -1,0 +1,9 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+elasticsearch[async]==8.15.0
+pydantic==2.9.0
+pydantic-settings==2.5.2
+httpx==0.27.2
+aiosqlite==0.20.0
+numpy==1.26.4
+python-dotenv==1.0.1
